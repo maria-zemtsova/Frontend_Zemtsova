@@ -1,0 +1,158 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 27px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.main-page {
+  background-color: #E5E5E5;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+.tickets__sort {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.sort__button {
+  background-color: #ffffff;
+  border: none;
+  width: 260px;
+  height: 50px;
+  color: #151515;
+  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+}
+
+.sort__button--current {
+  background-color: #656293;
+  color: #ffffff;
+}
+
+.tickets__list {
+  list-style: none;
+  margin: 20px 30px 0 30px;
+  padding: 0;
+  width: 260px;
+}
+
+.tickets__item {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.tickets_info,
+.option__transfer {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.option__transfer {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.transfer__number {
+  margin-left: 10px;
+}
+
+.transfer__city {
+  margin-right: 10px;
+  color: #656293;
+}
+
+.tickets__option {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tickets__airline {
+  width: 120px;
+  height: 40px;
+  margin: 5px 0 0 5px;
+}
+
+.tickets__price {
+  padding: 10px 5px 0 0;
+  color: #656293;
+  font-weight: bold;
+}
+
+.option__depature {
+  margin-left: 10px;
+}
+
+.depature__direction,
+.arrival__direction {
+  color: #151515;
+  font-weight: bold;
+}
+
+.depature__time,
+.arrival__time {
+  color: #656293;
+}
+
+.option__time {
+  font-size: 12px;
+  margin: 0;
+  text-transform: none;
+  color: #A9A9AA;
+}
+
+.time__image {
+  position: relative;
+  top: 15px;
+  left: 23px;
+}
+
+.time__title {
+  position: relative;
+  top: 7px;
+  text-align: center;
+}
+
+.option__arrival {
+  text-align: right;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

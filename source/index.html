@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="page__body">
     <header></header>
-    <main>
-        <h1>Сервис поиска авиабилетов</h1>
-        <section>
-            <h2>Список билетов</h2>
-            <button>Самый дешевый</button>
-            <button>Самый быстрый</button>
-            <ol>
-                <li>
+    <main class="main-page">
+        <h1 class="visually-hidden">Сервис поиска авиабилетов</h1>
+        <section class="tickets">
+            <h2 class="visually-hidden">Список билетов</h2>
+
+            <div class="tickets__sort">
+                <button class="sort__button sort__button--current">Самый дешевый</button>
+                <button class="sort__button">Самый быстрый</button>
+            </div>
+
+            <ol class="tickets__list">
+                <li class="tickets__item">
+
+                    <div class="tickets_info">
+                        <img class="tickets__airline" src="img/s7.png" width="120px" height="40px" alt="Логотип авиакомпании">
+                        <b class="tickets__price">13 400 P</b>
+                    </div>
+                    
+
+                    <div class="tickets__option">
+                        <p class="option__depature">
+                            <span class="depature__direction">mow</span> <br>
+                            <span class="depature__time">10:45</span>                        
+                        </p>
+                        <p class="option__time">
+                            <img class="time__image" src="img/icon-plane.svg" alt="Время в пути" width="35px" height="35px"> <br>
+                            <span class="time__title">В пути 21ч 15м</span>                         
+                        </p>
+                        <p class="option__arrival">
+                            <span class="arrival__direction">mow</span> <br>
+                            <span class="arrival__time">12:45</span>
+                        </p>
+                    </div>
+
+                        <p class="option__transfer">
+                            <span class="transfer__number">2 пересадки</span> <br>
+                            <span class="transfer__city">hkg, jnb</span>                        
+                        </p>
+
+                </li>
+                <!-- <li>
                     <b>13 400 P</b>
                     <img src="" alt="">
                     <div>
@@ -77,43 +111,10 @@
                             <span>hkg</span>                        
                         </p>
                     </div>
-                </li>
-                <li>
-                    <b>13 400 P</b>
-                    <img src="" alt="">
-                    <div>
-                        <p>
-                            <span>mow - nkt</span>
-                            <span>10:45 - 08:00</span>                        
-                        </p>
-                        <p>
-                            <span>В пути</span>
-                            <span>21ч 15м</span>                        
-                        </p>
-                        <p>
-                            <span>2 пересадки</span>
-                            <span>hkg, jnb</span>                        
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>mow - nkt</span>
-                            <span>11:20 - 00:50</span>                        
-                        </p>
-                        <p>
-                            <span>В пути</span>
-                            <span>13ч 30м</span>                        
-                        </p>
-                        <p>
-                            <span>1 пересадки</span>
-                            <span>hkg</span>                        
-                        </p>
-                    </div>
-                </li>
+                </li> -->
             </ol>
             <form action="">
                 <legend>Количество пересадок</legend>
-
                 <ul>
                     <li>
                         <label for="">
