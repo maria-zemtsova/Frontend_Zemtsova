@@ -28,6 +28,7 @@ img {
 
 .main-page {
   background-color: #E5E5E5;
+  padding: 30px 0;
 }
 
 @font-face {
@@ -44,6 +45,112 @@ img {
   font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
+.page__footer {
+  height: 50px;
+  background-color: #656293;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  width: 80px;
+}
+
+.page__header {
+  background-image: url("../img/header-backgr.png");
+  background-repeat: no-repeat;
+  background-size: 320px 240px;
+  position: relative;
+  min-height: 240px;
+}
+
+.page-header__bar {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr 50px;
+  z-index: 2;
+  padding: 21px 20px;
+  text-align: center;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: 300;
+  width: 280px;
+  min-height: 47px;
+  font-size: 32px;
+  line-height: 28.8px;
+  color: #656293;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  background-image: url("../img/open-menu-btn.svg");
+  border: none;
+  background-repeat: no-repeat;
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.page-header__menu {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: absolute;
+  left: 0;
+  top: 69px;
+  z-index: 2;
+  display: none;
+}
+
+.page-header__nav--closed .page-header__menu {
+  display: none;
+}
+
+.page-header__nav--opened .page-header__bar {
+  background-color: #656293;
+}
+
+.page-header__nav--opened .main-nav__toggle {
+  background-image: url("../../img/global/close-menu-btn.svg");
+  margin-left: 25px;
+}
+
+.site-list__item a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.site-list__item {
+  box-shadow: 0px 1px 0px 0px #000, 0px 1px 0px 0px rgba(255, 255, 255, 0.15) inset;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #283645;
+  border: #000000;
+}
+
+.site-list__item a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.site-list__item--active {
+  border-width: 0px 0px 2px 0px;
+}
+
 .tickets__sort {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -225,7 +332,6 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("../img/tick.svg");
-  z-index: 2;
 }
 
 .pop-up-flight {
