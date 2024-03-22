@@ -1,0 +1,35 @@
+.booking{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 270px;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 10px;
+    color: $color-lilac;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.booking__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.booking__input-name{
+    width: 206px;
+}
+
+.booking__label-second-name > .booking__input{
+    width: 162px;
+}
+
+.booking__label-passport > .booking__input{
+    width: 171px;
+}
+
+.booking__button{
+    margin: 10px 10px 0 10px;
+    width: 250px;
+}

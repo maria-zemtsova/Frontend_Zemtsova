@@ -187,9 +187,39 @@
                 </li>
             </ul>
             <button class="flight__button">Забронировать</button>
-
-
         </section>
+
+        <form class="booking" action="">
+            <legend class="visually-hidden">Ваши ФИО</legend>  
+                <ul class="booking__list">
+                  <li class="booking__item">
+                    <label class="booking__label booking__label-fio">
+                      <span class="booking__lead"> Фамилия:</span>
+                      <input class="booking__input" name="surname" type="text" placeholder="Укажите фамилию *" required>
+                    </label>
+                  </li>
+                  <li class="booking__item">
+                    <label class="booking__label booking__label-name">
+                      <span class="booking__lead">Имя:</span> 
+                      <input class="booking__input booking__input-name" name="name" type="text" placeholder="Введите ваше имя *" required>
+                    </label>
+                  </li>
+                  <li class="field-group__item ">
+                    <label class="booking__label booking__label-second-name">
+                      <span class="booking__lead">Отчество:</span>
+                      <input class="booking__input" name="second name" type="text" placeholder="И отчество">
+                    </label>
+                  </li>
+                  <li class="field-group__item ">
+                    <label class="booking__label booking__label-passport">
+                      <span class="booking__lead">Паспорт:</span>
+                      <input class="booking__input" name="passport" type="text" placeholder="0000 123123">
+                    </label>
+                  </li>
+                </ul>
+                <button class="booking__button">Забронировать</button>
+        </form>
+
     </main>
     <footer></footer>
 </body>
