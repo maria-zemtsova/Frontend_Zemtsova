@@ -155,4 +155,76 @@ img {
   text-align: right;
   margin-right: 10px;
 }
+
+.form {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 260px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.form__legend {
+  text-align: center;
+  color: #151515;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: #656293;
+  font-weight: bold;
+}
+
+.form__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.control__lead {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+
+.control__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.control__lead::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  background-color: #fff;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.control__lead::after {
+  content: " ";
+  display: none;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  box-sizing: border-box;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.control-input:checked + .control-lead::after {
+  display: block;
+}
+
+.control--checkbox .control__input:checked + .control__lead::after {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../img/tick.svg");
+  z-index: 2;
+}
 /*# sourceMappingURL=style.css.map */
