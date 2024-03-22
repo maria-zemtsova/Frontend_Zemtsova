@@ -1,0 +1,45 @@
+.pop-up-flight{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 290px;
+    margin-left: 15px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flight__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flight__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__title{
+    color: $color-light-black;
+    margin-left: 10px;
+}
+
+.item__description{
+    color: $color-lilac;
+    margin-right: 10px;
+}
+
+.flight__image{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.flight__button{
+    border: none;
+    width: 260px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: $font-body;
+    background-color: $color-lilac;
+    color: $color-white;
+    margin: 10px 15px;
+}
